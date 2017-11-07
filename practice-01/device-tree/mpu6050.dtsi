@@ -1,0 +1,20 @@
+/*
+	/bb-linux/arch/arm/boot/dts/am335x-bone-common.dtsi
+*/
+
+
+/*
+	The slave address of the MPU-60X0 is b110100X which is 7 bits long.
+	
+*/
+
+&i2c2 {
+	//...
+	
+	mpu6050: mpu6050@68 {
+		compatible = "mpu6050";
+		reg = <0x68>;
+	}
+}
+
+mpu650
